@@ -1,0 +1,23 @@
+.carousel {
+    position: relative;
+    height: 300px; /* Set the height of the carousel */
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Set the width of the image to fill the container */
+    height: 100%; /* Set the height of the image to fill the container */
+    object-fit: cover; /* Scale the image to cover the container */
+    transition: opacity 0.5s ease-in-out; /* Add a transition effect for smooth fade in/out */
+    opacity: 0; /* Set the initial opacity to 0 to hide the image */
+  }
+  
+  .carousel-image.active {
+    opacity: 1; /* Set the opacity to 1 to show the image */
+  }
+  
